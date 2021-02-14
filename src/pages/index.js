@@ -9,7 +9,7 @@ export default function Home() {
   return (
   <div>
     <Layout>
-    <h1>This is the Homepage</h1>
+    <h1>Medifresse</h1>
     <p>Check it out motherfucker</p>
     <Article headLine="Lorem Ipsum oder wat wees icke">
       <p>

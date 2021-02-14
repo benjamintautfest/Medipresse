@@ -17,7 +17,7 @@ export default function Header() {
 }
 
 const HeaderStyled = styled.header `
-    background: hotpink;
+    background: yellowgreen;
     margin-top: 0;
         h1, a {
             color: white;
