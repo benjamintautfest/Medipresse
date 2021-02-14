@@ -1,13 +1,22 @@
 import React from 'react'
+import styled from 'styled-components'
 
 const Article = ({children, headLine}) => {
     return(
-        <article>
-            <h2 className="article__header">{headLine}</h2>
+        <ArticleStyled>
+            <h2>{headLine}</h2>
             {children}
-            <hr />
-        </article>
+        </ArticleStyled>
     )
 }
 
 export default Article
+
+const ArticleStyled = styled.article`
+    margin-bottom: 1em;
+    line-height: 1.6;
+    border-bottom: #ddd solid 1px;
+        h2, h3 {
+            color: teal;
+        }
+`

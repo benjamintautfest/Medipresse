@@ -19,6 +19,14 @@ export default function Home() {
     <Article headLine="Irgend ein anderen">
       <p>
         Alter, ich bin schon ziemlich begeistert, dass das einfach so funktioniert.Diggi
+        Lorem
+      </p> 
+    </Article>
+    <Article headLine="Hier kommt der dritte Artikel">
+      <p>
+        Wie soll das denn allse immer weitergehen mit diesem ewigen Getippe und immer noch ein Wort und
+        noch ein Wort. Ich weiß einfach nicht, was der ganze Scheiß eigentlich soll. Und das ist immer noch 
+        nicht genug, denn hier sollte nun mehr stehen. und hier gibts <Link to="/trombose">mehr</Link>
       </p> 
     </Article>
     </Layout> 

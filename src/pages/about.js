@@ -8,7 +8,8 @@ export default function About() {
         <div>
             <Layout>          
             <h1>Howdy</h1>
-            <p> I am Ben, who then art though</p>      
+                  
+            <p> I am Ben, who then art though and there aint nothin' much to say about my self</p>      
             </Layout>
         </div>
     )
