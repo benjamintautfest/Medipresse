@@ -6,10 +6,12 @@ export default function Header() {
     return(
         <HeaderStyled>
             <h1>This is the header component</h1>
-            <Link className="nav-link" to="/">Home</Link>
-            <Link className="nav-link" to="/about">About</Link>
-            <Link className="nav-link" to="/contact">Contact</Link>
-            <Link className="nav-link" to="/trombose">Artikel</Link>
+                <nav>
+                    <Link to="/">Home</Link>
+                    <Link to="/about">About</Link>
+                    <Link to="/contact">Contact</Link>
+                    <Link to="/trombose">Artikel</Link>
+                </nav>
         </HeaderStyled>
     )
 }
@@ -20,9 +22,26 @@ const HeaderStyled = styled.header `
         h1, a {
             color: white;
         }
+
+        a {
+            background: white;
+            color: hotpink;
+            padding: 0.5em 1em;
+            border-radius: 4px;
+            transition: all 0.4s;
+            text-decoration: none;
+            margin-right: 1em;
+        }
+
         a:hover {
             color: purple;
+            transform: scale(1.1);
+            background: purple;
+            color: white;
         }
     padding: 1em;
+        nav {
+            display: flex;
+        }
 
 `

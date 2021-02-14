@@ -4,6 +4,7 @@ import Layout from '../components/layout'
 import Article from '../components/article'
 
 
+
 export default function Home() {
   return (
   <div>

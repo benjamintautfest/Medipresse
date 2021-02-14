@@ -1,6 +1,7 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled from 'styled-components/macro'
 import Article from './article'
+import {Link} from 'gatsby'
 
 const SideBar = () => {
     return(
@@ -9,8 +10,15 @@ const SideBar = () => {
                 <p>und hier steht Sidbar-text. Ich weiß auch nicht do</p>
             </Article>
             <Article headLine="und noch eine">
-                <p>Ich hätte so gerne ma ein bisschen Text jetzt hier, es kann doch wohl
-                nicht angehen, dass das einfach nicht gehen will:
+                <p>
+                    Ich hätte so gerne ma ein bisschen Text jetzt hier, es kann doch wohl
+                    nicht angehen, dass das einfach nicht gehen will:
+                </p>
+            </Article>
+            <Article headLine="und eine dritte">
+                <p>
+                    Ich hätte so gerne ma ein bisschen Text jetzt hier, es kann doch wohl
+                    nicht angehen, dass das einfach nicht <Link to="/trombose">gehen will</Link>
                 </p>
             </Article>
         </SidebarStyled>
@@ -20,8 +28,11 @@ const SideBar = () => {
 export default SideBar
 
 const SidebarStyled = styled.aside`
-    background: #ddd;
     padding: 1em;
     width: 400px;
     line-height: 1.6;
+
+        h2 {
+            color: hotpink;
+        }
 `
