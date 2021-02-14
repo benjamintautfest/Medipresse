@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: teal;
+    font-family: sans-serif;
+    margin: 0;
+}
+
+h1 {
+    color: black;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    background: white;
+    padding: 1em; 
+    margin-top: 1em;   
+}
+
+.nav-link {
+    margin-right: 1em;
+    text-decoration: none;
+    color: grey;
+}
+
+.page-footer {
+    background: yellowgreen;
+    padding: 1em;
+    text-align: center;
+    color: white;
+}
+
+.site-header {
+    background: rgb(196, 192, 192);
+    padding: 1em;
+}
+
+.article__header {
+    color: teal;
+}
