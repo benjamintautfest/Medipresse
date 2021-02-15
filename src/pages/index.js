@@ -6,7 +6,6 @@ import styled from 'styled-components'
 
 export default function Home() {
 	return (
-		<div>
 			<Layout>
 				<Article headLine="Krankheiten A-Z: Bruxismus (Zähneknirschen)">
 					<ParagraphStyled>
@@ -21,13 +20,8 @@ export default function Home() {
 							Kaumuskel­aktivität - durch die entstehenden
 							Geräusche. Redensartlich beißen wir die Zähne
 							zusammen, verbeißen uns in ein Problem oder sind
-							zerknirscht. Und tatsächlich können Emotionen
-							Auslöser für das Zähne­knirschen sein, das auch als
-							Bruxismus beschrieben wird. Jeder Fünfte ist davon
-							in Deutschland betroffen. Wir klären über das
-							zermürbende Phänomen und Möglichkeiten der
-							Behandlung auf. <br />
-							Von Catharina Gerber
+							zerknirscht. <br />
+							Von Catharina Gerber 
 							<Link to="/trombose"> mehr ...</Link>
 						</p>
 					</ParagraphStyled>
@@ -69,7 +63,6 @@ export default function Home() {
 					</ParagraphStyled>
 				</Article>
 			</Layout>
-		</div>
 	)
 }
 

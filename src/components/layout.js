@@ -30,6 +30,11 @@ const LayoutStyled = styled.div`
 	margin-top: 1em;
 	display: grid;
 
+	@media (max-width: 800px) {
+		width: 100%;
+		margin: 0;
+	}
+
 	main {
 		padding: 2em;
 		width: 90%;

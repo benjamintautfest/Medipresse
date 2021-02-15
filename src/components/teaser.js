@@ -43,7 +43,6 @@ const TeaserBox = styled.div`
 	div {
 		width: 70%;
 		height: 100%;
-		background: cornflowerblue;
 	}
 
 	article {

@@ -13,7 +13,7 @@ export default function Header() {
 		}
 	`)
 
-	const {title} = data.site.siteMetadata
+	const { title } = data.site.siteMetadata
 
 	const [mobileNavi, setMobileNave] = useState(false)
 
@@ -24,8 +24,12 @@ export default function Header() {
 	return (
 		<HeaderStyled>
 			<ul className="contact-impressum">
-				<li><Link to="/contact">Contact</Link></li>
-				<li><Link to="/contact">Impressum</Link></li>
+				<li>
+					<Link to="/contact">Contact</Link>
+				</li>
+				<li>
+					<Link to="/contact">Impressum</Link>
+				</li>
 			</ul>
 			<div onClick={handleClick} className="burger-menu">
 				<div></div>
@@ -39,16 +43,20 @@ export default function Header() {
 			</h1>
 			<nav>
 				<Link to="/">Home</Link>
-				<Link to="/about">About</Link>
-				<Link to="/contact">Contact</Link>
-				<Link to="/trombose">Artikel</Link>
+				<Link to="/about">Krankheiten A-Z</Link>
+				<Link to="/contact">Gesund leben</Link>
+				<Link to="/trombose">Experten-Sprechtstunde</Link>
+				<Link to="/trombose">Mensch und Tier</Link>
+				<Link to="/trombose">Videos</Link>
 			</nav>
 			{mobileNavi ? (
 				<div className="mobile-nav">
 					<Link to="/">Home</Link>
-					<Link to="/about">About</Link>
-					<Link to="/contact">Contact</Link>
-					<Link to="/trombose">Artikel</Link>
+					<Link to="/about">Krankheiten A-Z</Link>
+					<Link to="/contact">Gesund leben</Link>
+					<Link to="/trombose">Experten-Sprechtstunde</Link>
+					<Link to="/trombose">Mensch und Tier</Link>
+					<Link to="/trombose">Videos</Link>
 				</div>
 			) : (
 				''
@@ -58,9 +66,16 @@ export default function Header() {
 }
 
 const HeaderStyled = styled.header`
-	background: white;
+	background: rgb(255, 255, 255);
+	background: linear-gradient(
+		183deg,
+		rgba(255, 255, 255, 1) 0%,
+		rgba(223, 223, 223, 1) 100%
+	);
 	margin-top: 0;
 	position: relative;
+	border-top: 30px yellowgreen solid;
+	box-sizing: border-box;
 
 	h1,
 	a {
@@ -68,11 +83,11 @@ const HeaderStyled = styled.header`
 	}
 
 	h1 {
-		padding: 1em;
+		padding: 0.3em 0;
 	}
 
 	a {
-		color: black;
+		color: grey;
 		padding: 0.5em 1em;
 		transition: all 0.4s;
 		text-decoration: none;
@@ -115,7 +130,7 @@ const HeaderStyled = styled.header`
 		position: absolute;
 		background: #000000ee;
 		top: 0;
-		height: 95vh;
+		height: 100vh;
 		width: 100%;
 		padding: 4em 2em;
 	}
@@ -136,7 +151,20 @@ const HeaderStyled = styled.header`
 		top: 1em;
 	}
 
-	@media (max-width: 800px) {
+	.contact-impressum a {
+		margin-right: 5px;
+		background: rgb(112, 164, 6);
+		background: linear-gradient(
+			0deg,
+			rgba(112, 164, 6, 1) 0%,
+			rgba(154, 205, 50, 1) 100%
+		);
+		padding: 0.5em 1em;
+		border-radius: 30px;
+		color: white;
+	}
+
+	@media (max-width: 910px) {
 		nav {
 			display: none;
 		}
