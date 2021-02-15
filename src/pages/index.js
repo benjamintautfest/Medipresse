@@ -2,6 +2,7 @@ import React from "react"
 import {Link} from 'gatsby'
 import Layout from '../components/layout'
 import Article from '../components/article'
+import styled from 'styled-components'
 
 
 
@@ -9,28 +10,79 @@ export default function Home() {
   return (
   <div>
     <Layout>
-    <h1>Medifresse</h1>
-    <p>Check it out motherfucker</p>
-    <Article headLine="Lorem Ipsum oder wat wees icke">
+    <Article headLine="Krankheiten A-Z: Bruxismus (Zähneknirschen)">
+      <ParagraphStyled>
+      <img src="https://www.medipresse.de/uploads/images/Bruxismus" />
       <p>
         Hier steht jetzt der Text von dem Artikel, der nur als 
-        Komponente exisitiert und ich weiß nich was.
-      </p> 
-    </Article>
-    <Article headLine="Irgend ein anderen">
-      <p>
-        Alter, ich bin schon ziemlich begeistert, dass das einfach so funktioniert.Diggi
-        Lorem
-      </p> 
-    </Article>
-    <Article headLine="Hier kommt der dritte Artikel">
-      <p>
-        Wie soll das denn allse immer weitergehen mit diesem ewigen Getippe und immer noch ein Wort und
+        Komponente exisitiert und ich weiß nich was. Wie soll das denn allse immer weitergehen mit diesem ewigen Getippe und immer noch ein Wort und
         noch ein Wort. Ich weiß einfach nicht, was der ganze Scheiß eigentlich soll. Und das ist immer noch 
         nicht genug, denn hier sollte nun mehr stehen. und hier gibts <Link to="/trombose">mehr</Link>
-      </p> 
+      </p>    
+      </ParagraphStyled> 
     </Article>
+    <Article headLine="Neues aus der HNO-Praxis, Folge 11: Morbus Menière – Wenn starke Schwindelattacken zur Qual werden">
+      <ParagraphStyled>
+      <img src="https://www.medipresse.de/uploads/images/Banerjee_Morbus%20Meniere_XS.jpg" />
+      <p>
+        Hier steht jetzt der Text von dem Artikel, der nur als 
+        Komponente exisitiert und ich weiß nich was. Wie soll das denn allse immer weitergehen mit diesem ewigen Getippe und immer noch ein Wort und
+        noch ein Wort. Ich weiß einfach nicht, was der ganze Scheiß eigentlich soll. Und das ist immer noch 
+        nicht genug, denn hier sollte nun mehr stehen. und hier gibts <Link to="/trombose">mehr</Link>
+      </p>    
+      </ParagraphStyled> 
+    </Article>
+    <Article headLine="Neues aus der HNO-Praxis, Folge 11: Morbus Menière – Wenn starke Schwindelattacken zur Qual werden">
+      <ParagraphStyled>
+      <img src="https://www.medipresse.de/uploads/images/Frieren_XS.jpg" />
+      <p>
+        Hier steht jetzt der Text von dem Artikel, der nur als 
+        Komponente exisitiert und ich weiß nich was. Wie soll das denn allse immer weitergehen mit diesem ewigen Getippe und immer noch ein Wort und
+        noch ein Wort. Ich weiß einfach nicht, was der ganze Scheiß eigentlich soll. Und das ist immer noch 
+        nicht genug, denn hier sollte nun mehr stehen. und hier gibts <Link to="/trombose">mehr</Link>
+      </p>    
+      </ParagraphStyled> 
+    </Article>
+    
     </Layout> 
   </div>
   )
 }
+
+const ParagraphStyled = styled.div `
+display: flex;
+background: #e1e4e9;
+border-radius: 20px;
+p {
+  margin: 1em;
+  width: 40%;
+  @media(max-width: 1000px){
+  width: 100%;
+}
+
+
+}
+
+img {
+  width: 60%;
+  display: block;
+  object-fit: cover;
+  border-radius: 20px 0 0 20px;
+}
+
+@media(max-width: 1000px){
+  flex-direction: column;
+
+    img {
+      width: 100%;
+      max-height: 300px;
+      border-radius: 20px 20px 0 0;
+    }
+
+    p {
+      width: 90%;
+    }
+
+    
+}
+`

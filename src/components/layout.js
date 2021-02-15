@@ -4,11 +4,13 @@ import Footer from './footer'
 import style from '../styles/index.css'
 import styled from 'styled-components'
 import SideBar from './sidebar'
+import Teaser from './teaser'
 
 const Layout = ({children}) => {
     return(
         <LayoutStyled>
             <Header />
+            <Teaser />
                 <div>
                     <main>{children}</main>
                     <SideBar/>
@@ -23,9 +25,12 @@ export default Layout
 
 const LayoutStyled = styled.div `
     width: 90%;
+    max-width: 1200px;
     margin: 0 auto;
     background: white;
     margin-top: 1em; 
+    display: grid;
+
         main {
             padding: 1em;
             width: 90%;
@@ -36,4 +41,13 @@ const LayoutStyled = styled.div `
         SideBar {
             width: 10%;
         }
+        
+        @media(max-width: 800px) {
+            main {
+                width: 100%
+            } 
+
+        }
+
+
 `

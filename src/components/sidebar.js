@@ -7,18 +7,12 @@ import SpecialLinks from './specialLinks'
 const SideBar = () => {
     return(
         <SidebarStyled>
-            <Article headLine="Das ist eine Sidebar">
-                <p>und hier steht Sidbar-text. Ich weiß auch nicht do</p>
-            </Article>
-
-            <Article headLine="und noch eine">
-                <p>
-                    Ich hätte so gerne ma ein bisschen Text jetzt hier, es kann doch wohl
-                    nicht angehen, dass das einfach nicht gehen will:
-                </p>
-            </Article>
             
+
             <SpecialLinks />
+
+            <img src="https://www.medipresse.de/uploads/images/busch_sidebar_teaser.jpg" />
+            <img src="https://www.medipresse.de/uploads/images/experten_btn.jpg" />
 
             <Article headLine="und eine dritte">
                 <p>
@@ -38,6 +32,12 @@ const SidebarStyled = styled.aside`
     line-height: 1.6;
 
         h2 {
-            color: hotpink;
+            color: teal;
         }
+
+        @media(max-width: 800px) {
+            display: none;
+        }
+
 `
+

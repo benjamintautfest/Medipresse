@@ -19,15 +19,18 @@ export default function Header() {
 const HeaderStyled = styled.header `
     background: yellowgreen;
     margin-top: 0;
+
         h1, a {
             color: white;
         }
 
+       h1 {
+           padding: 1em;
+       }
+
         a {
-            background: white;
-            color: hotpink;
+            color: black;
             padding: 0.5em 1em;
-            border-radius: 4px;
             transition: all 0.4s;
             text-decoration: none;
             margin-right: 1em;
@@ -39,9 +42,14 @@ const HeaderStyled = styled.header `
             background: purple;
             color: white;
         }
-    padding: 1em;
         nav {
             display: flex;
+            background: white;
+            padding-left: 1em;
         }
-
+        @media(max-width: 800px){
+        nav {
+            display: none;
+        }
+    }
 `

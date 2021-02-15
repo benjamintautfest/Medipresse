@@ -19,6 +19,7 @@ export default SpecialLinks
 const SpecialButtons = styled.div `
     display: flex;
     flex-direction: column;
+    margin-top: 2em;
 
     a {
         background: blue;
