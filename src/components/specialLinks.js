@@ -20,10 +20,10 @@ const SpecialLinks = () => {
 			<Link className="link ruecken-link" to="/contact">
 				Rücken Spezial
 			</Link>
-            <Link className="link wechseljahre-link" to="/contact">
+			<Link className="link wechseljahre-link" to="/contact">
 				Wechseljahre
 			</Link>
-            <Link className="link mundgesundheit-link" to="/contact">
+			<Link className="link mundgesundheit-link" to="/contact">
 				Mundgesundheit
 			</Link>
 		</SpecialButtons>
@@ -51,6 +51,9 @@ const SpecialButtons = styled.div`
 		text-align: center;
 		text-decoration: none;
 		margin-bottom: 1em;
+        font-weight: bold;
+        text-shadow: 1px 1px 0px rgb(0 0 0 / 60%);
+        letter-spacing: 1px;
 	}
 
 	.link:hover {
@@ -77,11 +80,11 @@ const SpecialButtons = styled.div`
 		background: blue;
 	}
 
-    .wechseljahre-link {
+	.wechseljahre-link {
 		background: purple;
 	}
 
-    .mundgesundheit-link {
+	.mundgesundheit-link {
 		background: red;
 	}
 `

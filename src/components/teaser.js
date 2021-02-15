@@ -81,6 +81,10 @@ const TeaserBox = styled.div`
 			width: 100%;
 		}
 
+        article {
+            padding: 1em;
+        }
+
 		button {
 			margin-bottom: 2em;
 		}

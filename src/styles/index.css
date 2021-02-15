@@ -12,22 +12,3 @@ h1 {
     color: black;
 }
 
-.container {
-     
-}
-
-.nav-link {
-    margin-right: 1em;
-    text-decoration: none;
-    color: grey;
-}
-
-
-.site-header {
-    background: rgb(196, 192, 192);
-    padding: 1em;
-}
-
-.article__header {
-    color: teal;
-}
