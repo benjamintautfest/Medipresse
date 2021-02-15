@@ -7,7 +7,8 @@
 module.exports = {
   /* Your site config here */
   siteMetadata: {
-      title: 'Medipresse Artikel'
+      title: 'Medipresse',
+      footer: 'Medipresse 2021'
   },
   plugins: [`gatsby-plugin-styled-components`],
 }

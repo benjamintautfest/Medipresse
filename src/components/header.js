@@ -1,8 +1,18 @@
 import React, { useState } from 'react'
-import { Link } from 'gatsby'
+import { Link, graphql, useStaticQuery } from 'gatsby'
 import styled from 'styled-components'
 
 export default function Header() {
+	const data = useStaticQuery(graphql`
+		query {
+			site {
+				siteMetadata {
+					title
+				}
+			}
+		}
+	`)
+
 	const [mobileNavi, setMobileNave] = useState(false)
 
 	function handleClick() {
@@ -18,7 +28,7 @@ export default function Header() {
 			</div>
 			<h1>
 				<Link className="logo" to="/">
-					Medipresse
+					{data.site.siteMetadata.title}
 				</Link>
 			</h1>
 			<nav>

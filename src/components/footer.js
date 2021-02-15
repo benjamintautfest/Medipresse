@@ -1,12 +1,22 @@
 import React from 'react'
 import styled from 'styled-components/macro'
-import { Link } from 'gatsby'
+import { Link, useStaticQuery, graphql } from 'gatsby'
 
 const Footer = () => {
+	const data = useStaticQuery(graphql`
+		query {
+			site {
+				siteMetadata {
+					footer
+				}
+			}
+		}
+	`)
+
 	return (
 		<FooterStyled>
 			<p>
-				&copy; 2021 Medipresse | <Link to="#">über uns </Link>|
+				&copy; {data.site.siteMetadata.footer} | <Link to="#">über uns </Link>|
 				<Link to="#"> Impressum</Link>
 			</p>
 		</FooterStyled>

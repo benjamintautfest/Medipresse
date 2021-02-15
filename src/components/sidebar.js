@@ -35,6 +35,8 @@ const SidebarStyled = styled.aside`
 		color: teal;
 	}
 
+  
+
 	@media (max-width: 800px) {
 		display: none;
 	}
