@@ -6,11 +6,8 @@ import SpecialLinks from './specialLinks'
 
 const SideBar = () => {
     return(
-        <SidebarStyled>
-            
-
+        <SidebarStyled>        
             <SpecialLinks />
-
             <img src="https://www.medipresse.de/uploads/images/busch_sidebar_teaser.jpg" />
             <img src="https://www.medipresse.de/uploads/images/experten_btn.jpg" />
 

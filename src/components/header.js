@@ -5,7 +5,7 @@ import styled from 'styled-components'
 export default function Header() {
     return(
         <HeaderStyled>
-            <h1>This is the header component</h1>
+            <h1><Link className="logo" to="/">Medipresse</Link></h1>
                 <nav>
                     <Link to="/">Home</Link>
                     <Link to="/about">About</Link>
@@ -37,9 +37,11 @@ const HeaderStyled = styled.header `
         }
 
         a:hover {
-            color: purple;
+            color: teal;
             transform: scale(1.1);
-            background: purple;
+        }
+
+        .logo {
             color: white;
         }
         nav {
@@ -50,6 +52,11 @@ const HeaderStyled = styled.header `
         @media(max-width: 800px){
         nav {
             display: none;
+        }
+
+        h1 {
+            text-align: center;
+            
         }
     }
 `
