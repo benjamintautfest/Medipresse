@@ -6,7 +6,10 @@ const Teaser = () => {
 	return (
 		<TeaserBox>
 			<div>
-				<img src="https://www.planet-wissen.de/gesellschaft/krankheiten/rheuma_und_arthrose/rheuma-arthritis-gelenk-108~_v-gseagaleriexl.jpg" alt="" />
+				<img
+					src="https://www.planet-wissen.de/gesellschaft/krankheiten/rheuma_und_arthrose/rheuma-arthritis-gelenk-108~_v-gseagaleriexl.jpg"
+					alt=""
+				/>
 			</div>
 			<article>
 				<p>
@@ -81,9 +84,9 @@ const TeaserBox = styled.div`
 			width: 100%;
 		}
 
-        article {
-            padding: 1em;
-        }
+		article {
+			padding: 1em;
+		}
 
 		button {
 			margin-bottom: 2em;
