@@ -13,6 +13,8 @@ export default function Header() {
 		}
 	`)
 
+	const {title} = data.site.siteMetadata
+
 	const [mobileNavi, setMobileNave] = useState(false)
 
 	function handleClick() {
@@ -21,6 +23,10 @@ export default function Header() {
 
 	return (
 		<HeaderStyled>
+			<ul className="contact-impressum">
+				<li><Link to="/contact">Contact</Link></li>
+				<li><Link to="/contact">Impressum</Link></li>
+			</ul>
 			<div onClick={handleClick} className="burger-menu">
 				<div></div>
 				<div></div>
@@ -28,7 +34,7 @@ export default function Header() {
 			</div>
 			<h1>
 				<Link className="logo" to="/">
-					{data.site.siteMetadata.title}
+					{title}
 				</Link>
 			</h1>
 			<nav>
@@ -52,7 +58,7 @@ export default function Header() {
 }
 
 const HeaderStyled = styled.header`
-	background: yellowgreen;
+	background: white;
 	margin-top: 0;
 	position: relative;
 
@@ -78,7 +84,8 @@ const HeaderStyled = styled.header`
 	}
 
 	.logo {
-		color: white;
+		color: teal;
+		font-size: 150%;
 	}
 	nav {
 		display: flex;
@@ -88,7 +95,7 @@ const HeaderStyled = styled.header`
 
 	.burger-menu {
 		position: absolute;
-		right: 1em;
+		left: 1em;
 		top: 1em;
 		display: none;
 		flex-direction: column;
@@ -98,7 +105,7 @@ const HeaderStyled = styled.header`
 	.burger-menu div {
 		width: 2em;
 		height: 5px;
-		background: white;
+		background: yellowgreen;
 		display: block;
 		border-radius: 5px;
 		margin-bottom: 5px;
@@ -121,6 +128,15 @@ const HeaderStyled = styled.header`
 		margin-bottom: 1em;
 	}
 
+	.contact-impressum {
+		position: absolute;
+		display: flex;
+		text-decoration: none;
+		list-style: none;
+		right: 1em;
+		top: 1em;
+	}
+
 	@media (max-width: 800px) {
 		nav {
 			display: none;
@@ -136,6 +152,10 @@ const HeaderStyled = styled.header`
 
 		.mobile-nav {
 			display: block;
+		}
+
+		.contact-impressum {
+			display: none;
 		}
 	}
 `
