@@ -6,7 +6,7 @@ const Teaser = () => {
 	return (
 		<TeaserBox>
 			<div>
-				<img src="https://www.planet-wissen.de/gesellschaft/krankheiten/rheuma_und_arthrose/rheuma-arthritis-gelenk-108~_v-gseagaleriexl.jpg" />
+				<img src="https://www.planet-wissen.de/gesellschaft/krankheiten/rheuma_und_arthrose/rheuma-arthritis-gelenk-108~_v-gseagaleriexl.jpg" alt="" />
 			</div>
 			<article>
 				<p>

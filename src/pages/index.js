@@ -10,7 +10,10 @@ export default function Home() {
 			<Layout>
 				<Article headLine="Krankheiten A-Z: Bruxismus (Zähneknirschen)">
 					<ParagraphStyled>
-						<img src="https://www.medipresse.de/uploads/images/Bruxismus" />
+						<img
+							src="https://www.medipresse.de/uploads/images/Bruxismus"
+							alt=""
+						/>
 						<p>
 							Pressen, knirschen, reiben – wer mit den Zähnen
 							knirscht, bekommt das in der Regel kaum mit. Meist
@@ -24,14 +27,17 @@ export default function Home() {
 							in Deutschland betroffen. Wir klären über das
 							zermürbende Phänomen und Möglichkeiten der
 							Behandlung auf. <br />
-							Von Catharina Gerber 
+							Von Catharina Gerber
 							<Link to="/trombose"> mehr ...</Link>
 						</p>
 					</ParagraphStyled>
 				</Article>
 				<Article headLine="Neues aus der HNO-Praxis, Folge 11: Morbus Menière – Wenn starke Schwindelattacken zur Qual werden">
 					<ParagraphStyled>
-						<img src="https://www.medipresse.de/uploads/images/Banerjee_Morbus%20Meniere_XS.jpg" />
+						<img
+							src="https://www.medipresse.de/uploads/images/Banerjee_Morbus%20Meniere_XS.jpg"
+							alt=""
+						/>
 						<p>
 							Hier steht jetzt der Text von dem Artikel, der nur
 							als Komponente exisitiert und ich weiß nich was. Wie
@@ -46,7 +52,10 @@ export default function Home() {
 				</Article>
 				<Article headLine="Neues aus der HNO-Praxis, Folge 11: Morbus Menière – Wenn starke Schwindelattacken zur Qual werden">
 					<ParagraphStyled>
-						<img src="https://www.medipresse.de/uploads/images/Frieren_XS.jpg" />
+						<img
+							src="https://www.medipresse.de/uploads/images/Frieren_XS.jpg"
+							alt=""
+						/>
 						<p>
 							Hier steht jetzt der Text von dem Artikel, der nur
 							als Komponente exisitiert und ich weiß nich was. Wie

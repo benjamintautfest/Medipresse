@@ -8,8 +8,14 @@ const SideBar = () => {
 	return (
 		<SidebarStyled>
 			<SpecialLinks />
-			<img src="https://www.medipresse.de/uploads/images/busch_sidebar_teaser.jpg" />
-			<img src="https://www.medipresse.de/uploads/images/experten_btn.jpg" />
+			<img
+				src="https://www.medipresse.de/uploads/images/busch_sidebar_teaser.jpg"
+				alt=""
+			/>
+			<img
+				src="https://www.medipresse.de/uploads/images/experten_btn.jpg"
+				alt=""
+			/>
 
 			<Article headLine="und eine dritte">
 				<p>
@@ -34,8 +40,6 @@ const SidebarStyled = styled.aside`
 	h2 {
 		color: teal;
 	}
-
-  
 
 	@media (max-width: 800px) {
 		display: none;

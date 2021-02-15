@@ -85,7 +85,6 @@ const HeaderStyled = styled.header`
 
 	.logo {
 		color: teal;
-		font-size: 150%;
 	}
 	nav {
 		display: flex;
@@ -114,11 +113,11 @@ const HeaderStyled = styled.header`
 	.mobile-nav {
 		display: none;
 		position: absolute;
-		background: #000000dd;
+		background: #000000ee;
 		top: 0;
 		height: 95vh;
 		width: 100%;
-		padding: 2em;
+		padding: 4em 2em;
 	}
 
 	.mobile-nav a {
@@ -144,6 +143,10 @@ const HeaderStyled = styled.header`
 
 		h1 {
 			text-align: center;
+		}
+
+		.logo {
+			font-size: 100%;
 		}
 
 		.burger-menu {
