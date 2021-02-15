@@ -10,5 +10,15 @@ module.exports = {
       title: '🐢 Medipresse',
       footer: 'Medipresse 2021'
   },
-  plugins: [`gatsby-plugin-styled-components`],
+  plugins: [
+    `gatsby-plugin-styled-components`,
+    {
+      resolve: `gatsby-source-filesystem`, 
+      options: {
+        name: `source`,
+        path: `${__dirname}/src/`
+      }
+    }
+  ],
+
 }
