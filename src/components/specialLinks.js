@@ -44,7 +44,6 @@ const SpecialButtons = styled.div`
 	}
 
 	.link {
-		background: yellowgreen;
 		display: block;
 		border-radius: 30px;
 		padding: 0.5em 1em;
@@ -61,19 +60,19 @@ const SpecialButtons = styled.div`
 	}
 
 	.augen-link {
-		background: teal;
+		background: #04639C;
 	}
 
 	.diabetes-link {
-		background: violet;
+		background: #FA1E80;
 	}
 
 	.herz-link {
-		background: orange;
+		background: #F6C42E;
 	}
 
 	.knochen-link {
-		background: blueviolet;
+		background: #FB1321;
 	}
 
 	.ruecken-link {
@@ -81,10 +80,10 @@ const SpecialButtons = styled.div`
 	}
 
 	.wechseljahre-link {
-		background: purple;
+		background: #A43998;
 	}
 
 	.mundgesundheit-link {
-		background: red;
+		background: #FA4D20;
 	}
 `

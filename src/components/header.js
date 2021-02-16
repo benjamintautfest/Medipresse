@@ -38,6 +38,7 @@ export default function Header() {
 			</div>
 			<h1>
 				<Link className="logo" to="/">
+					<span className="icon">🦠</span>
 					{title}
 				</Link>
 			</h1>
@@ -66,29 +67,22 @@ export default function Header() {
 }
 
 const HeaderStyled = styled.header`
-	background: rgb(255, 255, 255);
-	background: linear-gradient(
-		183deg,
-		rgba(255, 255, 255, 1) 0%,
-		rgba(223, 223, 223, 1) 100%
-	);
+	background: white;
 	margin-top: 0;
 	position: relative;
 	border-top: 30px yellowgreen solid;
-	box-sizing: border-box;
-
-	h1,
+	ƒ h1,
 	a {
 		color: white;
 	}
 
 	h1 {
-		padding: 0.3em 0;
+		margin-left: 0.5em;
 	}
 
 	a {
 		color: grey;
-		padding: 0.5em 1em;
+		padding: 0.5em 1em 1em 0;
 		transition: all 0.4s;
 		text-decoration: none;
 	}
@@ -100,6 +94,11 @@ const HeaderStyled = styled.header`
 
 	.logo {
 		color: teal;
+	}
+
+	.icon {
+		font-size: 1.5em;
+		margin-right: 0.5em;
 	}
 	nav {
 		display: flex;
@@ -187,6 +186,10 @@ const HeaderStyled = styled.header`
 
 		.contact-impressum {
 			display: none;
+		}
+
+		.icon {
+			display: block;
 		}
 	}
 `

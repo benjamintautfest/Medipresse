@@ -1,10 +1,10 @@
 import React from 'react'
 import Article from '../components/article'
-import Layout from '../components/layout'
+import LayoutCont from '../components/layoutCont'
 
 const Trombose = () => {
 	return (
-		<Layout>
+		<LayoutCont>
 			<Article headLine="Hier kommt jetzt mal ein langer Artikel">
 				<p>
 					Dieser konnte nur so lange abgedeckt werden, wie noch
@@ -31,7 +31,7 @@ const Trombose = () => {
 					im Jahr 1921.
 				</p>
 			</Article>
-		</Layout>
+		</LayoutCont>
 	)
 }
 

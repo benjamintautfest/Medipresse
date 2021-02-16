@@ -32,7 +32,7 @@ export default Teaser
 
 const TeaserBox = styled.div`
 	display: flex;
-	background: #e1e4e9;
+	background: yellowgreen;
 	height: 320px;
 
 	@media (max-width: 1150px) {

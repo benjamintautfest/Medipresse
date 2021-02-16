@@ -68,7 +68,7 @@ export default function Home() {
 
 const ParagraphStyled = styled.div`
 	display: flex;
-	background: #e1e4e9;
+	background: #E0E9F0;
 	border-radius: 20px;
 	p {
 		margin: 1em;
