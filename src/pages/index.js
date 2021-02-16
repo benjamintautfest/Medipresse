@@ -10,7 +10,7 @@ export default function Home() {
 				<Article headLine="Krankheiten A-Z: Bruxismus (Zähneknirschen)">
 					<ParagraphStyled>
 						<img
-							src="https://www.medipresse.de/uploads/images/Bruxismus"
+							src="https://www.drgal.de/wp-content/uploads/2017/10/Fotolia_144458296_Subscription_Monthly_M.jpg"
 							alt=""
 						/>
 						<p>

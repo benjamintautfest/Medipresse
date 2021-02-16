@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import { Link, graphql, useStaticQuery } from 'gatsby'
 import styled from 'styled-components'
+import MainMenu from './mainMenu'
+import logo from '../assets/medipresse_logo.svg'
 
 export default function Header() {
 	const data = useStaticQuery(graphql`
@@ -17,6 +19,8 @@ export default function Header() {
 
 	const [mobileNavi, setMobileNave] = useState(false)
 
+	const [specialMenu, setSpecialMenu] = useState(false)
+
 	function handleClick() {
 		setMobileNave(!mobileNavi)
 	}
@@ -24,6 +28,16 @@ export default function Header() {
 	return (
 		<HeaderStyled>
 			<ul className="contact-impressum">
+				<li>
+					<label>
+						<input
+							type="search"
+							className="search-box"
+							placeholder="suche"
+						/>
+						<button className="search-button">suche</button>
+					</label>
+				</li>
 				<li>
 					<Link to="/contact">Contact</Link>
 				</li>
@@ -36,20 +50,13 @@ export default function Header() {
 				<div></div>
 				<div></div>
 			</div>
+			<div className="special-menu">Specials</div>
 			<h1>
-				<Link className="logo" to="/">
-					<span className="icon">🦠</span>
-					{title}
+				<Link to="/">
+					<img className="logo" src={logo} alt="" />
 				</Link>
 			</h1>
-			<nav>
-				<Link to="/">Home</Link>
-				<Link to="/about">Krankheiten A-Z</Link>
-				<Link to="/contact">Gesund leben</Link>
-				<Link to="/trombose">Experten-Sprechtstunde</Link>
-				<Link to="/trombose">Mensch und Tier</Link>
-				<Link to="/trombose">Videos</Link>
-			</nav>
+			<MainMenu />
 			{mobileNavi ? (
 				<div className="mobile-nav">
 					<Link to="/">Home</Link>
@@ -89,11 +96,19 @@ const HeaderStyled = styled.header`
 
 	a:hover {
 		color: teal;
-		transform: scale(1.1);
+		text-decoration: underline;
 	}
 
 	.logo {
-		color: teal;
+		position: relative;
+		top: 0.4em;
+		margin: 0 auto;
+		width: 50%;
+		max-width: 200px;
+	}
+
+	.logo:hover {
+		text-decoration: none;
 	}
 
 	.icon {
@@ -106,6 +121,17 @@ const HeaderStyled = styled.header`
 		padding-left: 1em;
 	}
 
+	.search-box {
+		border-radius: 20px 0 0 20px;
+		border: 1px #e0e9f0 solid;
+		padding: 0.45em;
+		padding-left: 1em;
+		position: relative;
+		top: -0.5em;
+		outline: none;
+		font-size: 1em;
+	}
+
 	.burger-menu {
 		position: absolute;
 		left: 1em;
@@ -113,6 +139,14 @@ const HeaderStyled = styled.header`
 		display: none;
 		flex-direction: column;
 		z-index: 10;
+	}
+
+	.special-menu {
+		position: absolute;
+		color: yellowgreen;
+		right: 1em;
+		top: 1em;
+		display: none;
 	}
 
 	.burger-menu div {
@@ -150,7 +184,8 @@ const HeaderStyled = styled.header`
 		top: 1em;
 	}
 
-	.contact-impressum a {
+	.contact-impressum a,
+	.search-button {
 		margin-right: 5px;
 		background: rgb(112, 164, 6);
 		background: linear-gradient(
@@ -161,6 +196,21 @@ const HeaderStyled = styled.header`
 		padding: 0.5em 1em;
 		border-radius: 30px;
 		color: white;
+		transition: opacity 0.5s;
+		border: none;
+	}
+
+	.search-button {
+		border-radius: 0 20px 20px 0;
+		padding: 0.5em;
+		font-size: 1em;
+		position: relative;
+		top: -0.5em;
+		outline: none;
+	}
+
+	.contact-impressum a:hover {
+		opacity: 0.6;
 	}
 
 	@media (max-width: 910px) {
@@ -170,10 +220,6 @@ const HeaderStyled = styled.header`
 
 		h1 {
 			text-align: center;
-		}
-
-		.logo {
-			font-size: 100%;
 		}
 
 		.burger-menu {
@@ -189,6 +235,10 @@ const HeaderStyled = styled.header`
 		}
 
 		.icon {
+			display: block;
+		}
+
+		.special-menu {
 			display: block;
 		}
 	}

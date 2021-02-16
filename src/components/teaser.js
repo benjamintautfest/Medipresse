@@ -7,11 +7,12 @@ const Teaser = () => {
 		<TeaserBox>
 			<div>
 				<img
-					src="https://www.planet-wissen.de/gesellschaft/krankheiten/rheuma_und_arthrose/rheuma-arthritis-gelenk-108~_v-gseagaleriexl.jpg"
+					src="https://rosehipvital.com.sg/assets/images/joints-group.jpg"
 					alt=""
 				/>
 			</div>
 			<article>
+				<h3>Beweglichkeit verbessern und Schmerzen lindern</h3>
 				<p>
 					Die Selbstheilung von Gelenk- und Sportverletzungen fördern
 					und Schmerzen lindern: Das ist mit der Platelet-Rich
@@ -33,7 +34,7 @@ export default Teaser
 const TeaserBox = styled.div`
 	display: flex;
 	background: yellowgreen;
-	height: 320px;
+	height: 350px;
 
 	@media (max-width: 1150px) {
 		flex-direction: column;
@@ -55,9 +56,15 @@ const TeaserBox = styled.div`
 		object-fit: cover;
 	}
 
-	p {
+	p{
 		padding: 0 1em;
-		line-height: 1.6;
+		line-height: 1.45;
+	}
+
+	h3 {
+		padding: 0 .75em;
+		color: teal;
+		margin-bottom: 0;
 	}
 
 	button {

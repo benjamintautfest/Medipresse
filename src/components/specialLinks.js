@@ -53,10 +53,12 @@ const SpecialButtons = styled.div`
         font-weight: bold;
         text-shadow: 1px 1px 0px rgb(0 0 0 / 60%);
         letter-spacing: 1px;
+		transition: all .3s;
 	}
 
 	.link:hover {
 		opacity: 0.8;
+		transform: scale(1.05);
 	}
 
 	.augen-link {
