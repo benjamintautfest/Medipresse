@@ -21,7 +21,7 @@ export default function Header() {
 	const [specialMenu, setSpecialMenu] = useState(false)
 
 	const menu = [
-		{ name: 'Zuhausien', path: '/', id: 1 },
+		{ name: 'Home', path: '/', id: 1 },
 		{ name: 'Krankheiten A-Z', path: '/about', id: 2 },
 		{ name: 'Gesund leben', path: '/contact', id: 3 },
 		{ name: 'Expertensperchstunde', path: '/trombose', id: 4 },
@@ -67,7 +67,7 @@ export default function Header() {
 			</h1>
 
 			<nav>
-				{menu.map((item, key) => (
+				{menu.map((item) => (
 					<Link key={item.id} to={item.path}>
 						{item.name}
 					</Link>
@@ -76,7 +76,7 @@ export default function Header() {
 
 			{mobileNavi ? (
 				<nav className="mobile-nav">
-					{menu.map((item, key) => (
+					{menu.map((item) => (
 						<Link key={item.id} to={item.path}>
 							{item.name}
 						</Link>
@@ -134,7 +134,7 @@ const HeaderStyled = styled.header`
 	nav {
 		display: flex;
 		background: white;
-		padding-left: 1em;
+		padding-left: 2em;
 	}
 
 	.search-box {

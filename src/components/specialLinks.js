@@ -4,39 +4,55 @@ import { Link } from 'gatsby'
 
 const SpecialLinks = () => {
 	const specialLinks = [
-		{ name: 'Augen Spezial', style: 'link augen-link', link: '/contact' },
+		{
+			name: 'Augen Spezial',
+			style: 'link augen-link',
+			link: '/contact',
+			id: 1
+		},
 		{
 			name: 'Diabetes Spezial',
 			style: 'link diabetes-link',
 			link: '/trombose',
+			id: 2
 		},
 		{ name: 'Herz Spezial', style: 'link herz-link', link: '/contact' },
 		{
 			name: 'Knochen Spezial',
 			style: 'link knochen-link',
 			link: '/contact',
+			id: 3
+		},
+		{
+			name: 'Erkältung Spezial',
+			style: 'link erkältung-link',
+			link: '/contact',
+			id: 4
 		},
 		{
 			name: 'Rücken Spezial',
 			style: 'link ruecken-link',
 			link: '/contact',
+			id: 5
 		},
 		{
 			name: 'Mundgesundheit',
 			style: 'link mundgesundheit-link',
 			link: '/contact',
+			id: 6
 		},
 		{
 			name: 'Harnwegsinfekte',
 			style: 'link harnwegsinfekte-link',
 			link: '/contact',
+			id: 7
 		},
 	]
 	return (
 		<SpecialButtons>
-			{specialLinks.map((specialLink, key) => (
+			{specialLinks.map((specialLink) => (
 				<Link
-					key={specialLink.name}
+					key={specialLink.id}
 					className={specialLink.style}
 					to={specialLink.link}
 				>
@@ -107,6 +123,10 @@ const SpecialButtons = styled.div`
 	}
 
 	.harnwegsinfekte-link {
-		background: #06ADEF;
+		background: #06adef;
+	}
+
+	.erkältung-link {
+		background: teal;
 	}
 `
