@@ -77,11 +77,12 @@ const TeaserBox = styled.div`
 		color: white;
 		margin-bottom: 1em;
 		outline: none;
-		transition: opacity 0.5s;
+		transition: all 0.5s;
 	}
 
 	button:hover {
 		opacity: 0.8;
+		transform: scale(1.1)
 	}
 
 	@media (max-width: 1150px) {

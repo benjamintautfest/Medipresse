@@ -1,0 +1,5 @@
+---
+title: 'Laufen im Winter: Das gilt es zu beachten'
+excerpt: 'Fast das ganze Jahr über nutzen Läufer die Möglichkeit an der frischen Luft ihre Fitness zu verbessern. Denn Joggen verbessert nicht nur die Kon­dition, sondern stärkt das Herz-Kreislauf­system, baut Stress ab und verbrennt Kalorien. Im Winter haben viele Sportler aber Ausreden parat. Dann heißt es – zu kalt, zu rutschig, zu dunkel. Einige lassen deshalb ihre Lauf-Routine schleifen oder pausieren sogar ganz - bis wieder wärmere Temperaturen herrschen. Das muss nicht sein und ist auch nicht ratsam. Läufer büßen so ihre mühsam antrainierte Kondition ein. Moderates Training im Winter lohnt sich und stärkt das Immunsystem. Doch wie minimiert man das Verletzungsrisiko und schützt Haut und Atemwege vor den besonderen Herausforderungen? Medipresse gibt Tipps, um die Lauffreude im Winter nicht zu verlieren.'
+
+---

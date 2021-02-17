@@ -8,44 +8,49 @@ const SpecialLinks = () => {
 			name: 'Augen Spezial',
 			style: 'link augen-link',
 			link: '/contact',
-			id: 1
+			id: 1,
 		},
 		{
 			name: 'Diabetes Spezial',
 			style: 'link diabetes-link',
 			link: '/trombose',
-			id: 2
+			id: 2,
 		},
-		{ name: 'Herz Spezial', style: 'link herz-link', link: '/contact' },
+		{
+			name: 'Herz Spezial',
+			style: 'link herz-link',
+			link: '/contact',
+			id: 3,
+		},
 		{
 			name: 'Knochen Spezial',
 			style: 'link knochen-link',
 			link: '/contact',
-			id: 3
+			id: 4,
 		},
 		{
 			name: 'Erkältung Spezial',
 			style: 'link erkältung-link',
 			link: '/contact',
-			id: 4
+			id: 5,
 		},
 		{
 			name: 'Rücken Spezial',
 			style: 'link ruecken-link',
 			link: '/contact',
-			id: 5
+			id: 6,
 		},
 		{
 			name: 'Mundgesundheit',
 			style: 'link mundgesundheit-link',
 			link: '/contact',
-			id: 6
+			id: 7,
 		},
 		{
 			name: 'Harnwegsinfekte',
 			style: 'link harnwegsinfekte-link',
 			link: '/contact',
-			id: 7
+			id: 8,
 		},
 	]
 	return (
@@ -56,7 +61,7 @@ const SpecialLinks = () => {
 					className={specialLink.style}
 					to={specialLink.link}
 				>
-					{specialLink.name}
+					{specialLink.name} 
 				</Link>
 			))}
 		</SpecialButtons>

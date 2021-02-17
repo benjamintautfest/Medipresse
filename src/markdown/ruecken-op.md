@@ -1,0 +1,4 @@
+---
+title: 'Alternative zur OP bei Rückenschmerzen: Die periradikuläre Therapie'
+excerpt: 'Rückenschmerzen können von Nervenwurzeln im Bereich der Wirbelsäule ausgehen. Wenn diese z.B. durch Druck gereizt werden, etwa durch einen Bandscheiben­vorfall oder eine verschleißbedingte knöcherne Verengung der Nervenlaufbahn, können Rückenschmerzen sowie eine Beein­trächtigung im Versorgungsgebiet des betroffenen Nerves die Folge sein. Liegt die Nervenwurzel in der Halswirbelsäule, können die Schmerzen in den Arm ausstrahlen, von der Lendenwirbelsäule aus, strahlen sie ins Bein. Mediziner sprechen von radikulären Schmerzen, die für Betroffene sehr belastend und auch heute noch häufig Anlass für eine OP sind. Dr. Frank Thormählen, Facharzt für Orthopädie und Unfallchirurgie aus Hamburg, hat uns im Kurzinterview eine Alternative erläutert: Die periradikuläre Therapie, kurz PRT.'
+---

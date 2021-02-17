@@ -27,7 +27,7 @@ export default function Header() {
 		{ name: 'Expertensperchstunde', path: '/trombose', id: 4 },
 		{ name: 'Mensch und Tier', path: '/trombose', id: 5 },
 		{ name: 'Videos', path: '/trombose', id: 6 },
-		{ name: 'Ratgeber', path: '/contact', id: 7 },
+		{ name: 'Ratgeber', path: '/graphql.html', id: 7 },
 	]
 
 	function handleClick() {
@@ -118,13 +118,17 @@ const HeaderStyled = styled.header`
 	.logo {
 		position: relative;
 		top: 0.4em;
-		margin: 0 auto;
 		width: 50%;
 		max-width: 200px;
+		transition: all .5s;
+		margin-left: .5em;
+
 	}
 
 	.logo:hover {
 		text-decoration: none;
+		opacity: .8;
+		transform: scale(1.05);
 	}
 
 	.icon {
