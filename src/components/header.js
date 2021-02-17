@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { Link, graphql, useStaticQuery } from 'gatsby'
 import styled from 'styled-components'
-import MainMenu from './mainMenu'
 import logo from '../assets/medipresse_logo.svg'
 
 export default function Header() {
@@ -20,6 +19,16 @@ export default function Header() {
 	const [mobileNavi, setMobileNave] = useState(false)
 
 	const [specialMenu, setSpecialMenu] = useState(false)
+
+	const menu = [
+		{ name: 'Zuhausien', path: '/', id: 1 },
+		{ name: 'Krankheiten A-Z', path: '/about', id: 2 },
+		{ name: 'Gesund leben', path: '/contact', id: 3 },
+		{ name: 'Expertensperchstunde', path: '/trombose', id: 4 },
+		{ name: 'Mensch und Tier', path: '/trombose', id: 5 },
+		{ name: 'Videos', path: '/trombose', id: 6 },
+		{ name: 'Ratgeber', path: '/contact', id: 7 },
+	]
 
 	function handleClick() {
 		setMobileNave(!mobileNavi)
@@ -56,16 +65,23 @@ export default function Header() {
 					<img className="logo" src={logo} alt="" />
 				</Link>
 			</h1>
-			<MainMenu />
+
+			<nav>
+				{menu.map((item, key) => (
+					<Link key={item.id} to={item.path}>
+						{item.name}
+					</Link>
+				))}
+			</nav>
+
 			{mobileNavi ? (
-				<div className="mobile-nav">
-					<Link to="/">Home</Link>
-					<Link to="/about">Krankheiten A-Z</Link>
-					<Link to="/contact">Gesund leben</Link>
-					<Link to="/trombose">Experten-Sprechtstunde</Link>
-					<Link to="/trombose">Mensch und Tier</Link>
-					<Link to="/trombose">Videos</Link>
-				</div>
+				<nav className="mobile-nav">
+					{menu.map((item, key) => (
+						<Link key={item.id} to={item.path}>
+							{item.name}
+						</Link>
+					))}
+				</nav>
 			) : (
 				''
 			)}

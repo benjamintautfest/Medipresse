@@ -23,7 +23,7 @@ export default Layout
 
 const LayoutStyled = styled.div`
 	width: 90%;
-	max-width: 1200px;
+	max-width: 1000px;
 	margin: 0 auto;
 	background: white;
 	margin-top: 1em;

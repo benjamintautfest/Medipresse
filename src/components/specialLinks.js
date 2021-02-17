@@ -1,31 +1,48 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled from 'styled-components/macro'
 import { Link } from 'gatsby'
 
 const SpecialLinks = () => {
+	const specialLinks = [
+		{ name: 'Augen Spezial', style: 'link augen-link', link: '/contact' },
+		{
+			name: 'Diabetes Spezial',
+			style: 'link diabetes-link',
+			link: '/trombose',
+		},
+		{ name: 'Herz Spezial', style: 'link herz-link', link: '/contact' },
+		{
+			name: 'Knochen Spezial',
+			style: 'link knochen-link',
+			link: '/contact',
+		},
+		{
+			name: 'Rücken Spezial',
+			style: 'link ruecken-link',
+			link: '/contact',
+		},
+		{
+			name: 'Mundgesundheit',
+			style: 'link mundgesundheit-link',
+			link: '/contact',
+		},
+		{
+			name: 'Harnwegsinfekte',
+			style: 'link harnwegsinfekte-link',
+			link: '/contact',
+		},
+	]
 	return (
 		<SpecialButtons>
-			<Link className="link augen-link" to="/contact">
-				Augen Spezial
-			</Link>
-			<Link className="link diabetes-link" to="/contact">
-				Diabetes Spezial
-			</Link>
-			<Link className="link herz-link" to="/contact">
-				Herz Spezial
-			</Link>
-			<Link className="link knochen-link" to="/contact">
-				Knochen Spezial
-			</Link>
-			<Link className="link ruecken-link" to="/contact">
-				Rücken Spezial
-			</Link>
-			<Link className="link wechseljahre-link" to="/contact">
-				Wechseljahre
-			</Link>
-			<Link className="link mundgesundheit-link" to="/contact">
-				Mundgesundheit
-			</Link>
+			{specialLinks.map((specialLink, key) => (
+				<Link
+					key={specialLink.name}
+					className={specialLink.style}
+					to={specialLink.link}
+				>
+					{specialLink.name}
+				</Link>
+			))}
 		</SpecialButtons>
 	)
 }
@@ -50,10 +67,10 @@ const SpecialButtons = styled.div`
 		text-align: center;
 		text-decoration: none;
 		margin-bottom: 1em;
-        font-weight: bold;
-        text-shadow: 1px 1px 0px rgb(0 0 0 / 60%);
-        letter-spacing: 1px;
-		transition: all .3s;
+		font-weight: bold;
+		text-shadow: 1px 1px 0px rgb(0 0 0 / 60%);
+		letter-spacing: 1px;
+		transition: all 0.3s;
 	}
 
 	.link:hover {
@@ -62,19 +79,19 @@ const SpecialButtons = styled.div`
 	}
 
 	.augen-link {
-		background: #04639C;
+		background: #04639c;
 	}
 
 	.diabetes-link {
-		background: #FA1E80;
+		background: #fa1e80;
 	}
 
 	.herz-link {
-		background: #F6C42E;
+		background: #f6c42e;
 	}
 
 	.knochen-link {
-		background: #FB1321;
+		background: #fb1321;
 	}
 
 	.ruecken-link {
@@ -82,10 +99,14 @@ const SpecialButtons = styled.div`
 	}
 
 	.wechseljahre-link {
-		background: #A43998;
+		background: #a43998;
 	}
 
 	.mundgesundheit-link {
-		background: #FA4D20;
+		background: #fa4d20;
+	}
+
+	.harnwegsinfekte-link {
+		background: #06ADEF;
 	}
 `
