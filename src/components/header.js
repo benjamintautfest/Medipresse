@@ -9,22 +9,6 @@ import SpecialLinks from './specialLinks'
 import specialLinkIcon from '../assets/special-link.svg'
 
 export default function Header() {
-	const data = useStaticQuery(graphql`
-		query {
-			site {
-				siteMetadata {
-					title
-				}
-			}
-		}
-	`)
-
-	const { title } = data.site.siteMetadata
-
-	const [mobileNavi, setMobileNave] = useState(false)
-
-	const [specialMenu, setSpecialMenu] = useState(false)
-
 	const menu = [
 		{ name: 'Home', path: '/', id: 1 },
 		{ name: 'Krankheiten A-Z', path: '/about', id: 2 },
@@ -34,6 +18,9 @@ export default function Header() {
 		{ name: 'Videos', path: '/trombose', id: 6 },
 		{ name: 'Ratgeber', path: '/graphql.html', id: 7 },
 	]
+	const [mobileNavi, setMobileNave] = useState(false)
+
+	const [specialMenu, setSpecialMenu] = useState(false)
 
 	function handleClick() {
 		setMobileNave(!mobileNavi)
@@ -137,6 +124,7 @@ const HeaderStyled = styled.header`
 	margin-top: 0;
 	position: relative;
 	border-top: 30px yellowgreen solid;
+	border-bottom: 10px #E0EAF0 solid;
 	ƒ h1,
 	a {
 		color: white;

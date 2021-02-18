@@ -35,10 +35,12 @@ const TeaserBox = styled.div`
 	display: flex;
 	background: yellowgreen;
 	height: 350px;
+	border-bottom: 10px #E0EAF0 solid;
 
 	@media (max-width: 1150px) {
 		flex-direction: column;
 		height: 100%;
+		border-bottom: 10px #E0EAF0 solid;
 	}
 
 	div {
@@ -73,6 +75,7 @@ const TeaserBox = styled.div`
 		padding: 0.5em 1em;
 		border-radius: 30px;
 		margin-left: 1em;
+		margin-top: -1em;
 		font-size: 1em;
 		color: white;
 		margin-bottom: 1em;

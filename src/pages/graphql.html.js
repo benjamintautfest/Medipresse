@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { Link, graphql, useStaticQuery } from 'gatsby'
-import logo from '../assets/medipresse_logo.svg'
 import Layout from '../components/layout'
 import styled from 'styled-components'
 
