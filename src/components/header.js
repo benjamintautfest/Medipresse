@@ -2,6 +2,11 @@ import React, { useState } from 'react'
 import { Link, graphql, useStaticQuery } from 'gatsby'
 import styled from 'styled-components'
 import logo from '../assets/medipresse_logo.svg'
+import facebook from '../assets/facebook.svg'
+import twitter from '../assets/twitter.svg'
+import youtube from '../assets/youtube.svg'
+import SpecialLinks from './specialLinks'
+import specialLinkIcon from '../assets/special-link.svg'
 
 export default function Header() {
 	const data = useStaticQuery(graphql`
@@ -34,6 +39,10 @@ export default function Header() {
 		setMobileNave(!mobileNavi)
 	}
 
+	function handleClickSpecial() {
+		setSpecialMenu(!specialMenu)
+	}
+
 	return (
 		<HeaderStyled>
 			<ul className="contact-impressum">
@@ -51,15 +60,25 @@ export default function Header() {
 					<Link to="/contact">Contact</Link>
 				</li>
 				<li>
-					<Link to="/contact">Impressum</Link>
+					<Link to="/impressum">Impressum</Link>
 				</li>
 			</ul>
-			<div onClick={handleClick} className="burger-menu">
-				<div></div>
-				<div></div>
-				<div></div>
-			</div>
-			<div className="special-menu">Specials</div>
+			{!specialMenu ? (
+				<div onClick={handleClick} className="burger-menu">
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+			) : (
+				''
+			)}
+			{!mobileNavi ? (
+				<div onClick={handleClickSpecial} className="special-menu">
+					<img src={specialLinkIcon} alt="" />
+				</div>
+			) : (
+				''
+			)}
 			<h1>
 				<Link to="/">
 					<img className="logo" src={logo} alt="" />
@@ -72,6 +91,23 @@ export default function Header() {
 						{item.name}
 					</Link>
 				))}
+				<div className="social-bookmarks">
+					<a
+						href="https://www.facebook.com/medipresse"
+						target="blank"
+					>
+						<img src={facebook} alt="facebook" />
+					</a>
+					<a href="https://twitter.com/medipresse" target="blank">
+						<img src={twitter} alt="twitter" />
+					</a>
+					<a
+						href="https://www.youtube.com/user/medipressetv"
+						target="blank"
+					>
+						<img src={youtube} alt="youtube" />
+					</a>
+				</div>
 			</nav>
 
 			{mobileNavi ? (
@@ -81,6 +117,13 @@ export default function Header() {
 							{item.name}
 						</Link>
 					))}
+				</nav>
+			) : (
+				''
+			)}
+			{specialMenu ? (
+				<nav className="mobile-nav">
+					<SpecialLinks />
 				</nav>
 			) : (
 				''
@@ -120,14 +163,13 @@ const HeaderStyled = styled.header`
 		top: 0.4em;
 		width: 50%;
 		max-width: 200px;
-		transition: all .5s;
-		margin-left: .5em;
-
+		transition: all 0.5s;
+		margin-left: 0.5em;
 	}
 
 	.logo:hover {
 		text-decoration: none;
-		opacity: .8;
+		opacity: 0.8;
 		transform: scale(1.05);
 	}
 
@@ -158,6 +200,11 @@ const HeaderStyled = styled.header`
 		top: 1em;
 		display: none;
 		flex-direction: column;
+		z-index: 10;
+	}
+
+	.special-menu {
+		right: 1em;
 		z-index: 10;
 	}
 
@@ -227,6 +274,25 @@ const HeaderStyled = styled.header`
 		position: relative;
 		top: -0.5em;
 		outline: none;
+	}
+
+	.social-bookmarks {
+		display: flex;
+		height: 2em;
+		justify-content: space-between;
+		margin-left: auto;
+		margin-right: 0.5em;
+		margin-top: -1em;
+	}
+
+	.social-bookmarks a:hover {
+		transform: scale(1.1);
+	}
+
+	@media (max-width: 1066px) {
+		.social-bookmarks a {
+			display: none;
+		}
 	}
 
 	.contact-impressum a:hover {

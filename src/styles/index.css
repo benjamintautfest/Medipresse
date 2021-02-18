@@ -13,7 +13,15 @@ body {
     margin: 0;
 }
 
-h1 {
-    color: black;
+h1, h2, h3, strong {
+    color:teal;
+}
+
+p {
+    line-height: 1.6;
+}
+
+a {
+    color: teal;
 }
 

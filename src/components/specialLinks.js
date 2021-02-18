@@ -7,7 +7,7 @@ const SpecialLinks = () => {
 		{
 			name: 'Augen Spezial',
 			style: 'link augen-link',
-			link: '/contact',
+			link: '/impressum',
 			id: 1,
 		},
 		{
@@ -92,6 +92,7 @@ const SpecialButtons = styled.div`
 		text-shadow: 1px 1px 0px rgb(0 0 0 / 60%);
 		letter-spacing: 1px;
 		transition: all 0.3s;
+		border: none !important;
 	}
 
 	.link:hover {
