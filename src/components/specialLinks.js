@@ -52,6 +52,12 @@ const SpecialLinks = () => {
 			link: '/contact',
 			id: 8,
 		},
+		{
+			name: 'Wechseljahre',
+			style: 'link wechseljahre-link',
+			link: '/contact',
+			id: 9,
+		}
 	]
 	return (
 		<SpecialButtons>
@@ -117,7 +123,7 @@ const SpecialButtons = styled.div`
 	}
 
 	.ruecken-link {
-		background: blue;
+		background: #014172;
 	}
 
 	.wechseljahre-link {

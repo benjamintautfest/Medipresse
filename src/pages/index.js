@@ -19,7 +19,6 @@ export default function Home() {
 			}
 		}
 	`)
-	console.log(data)
 	return (
 		<Layout>
 			<Article headLine="Krankheiten A-Z: Bruxismus (Zähneknirschen)">

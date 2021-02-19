@@ -25,7 +25,7 @@ export default function GraphqlTestSite() {
 			{data.allMarkdownRemark.edges.map((edge) => (
 				<ArticleTeaser key={edge.node.frontmatter.title}>
 					<h2>{edge.node.frontmatter.title}</h2>
-					<div style={{ marginBottom: '2em' }}>
+					<div>
 						<img src={edge.node.frontmatter.banner} />
 						<p>
 							{edge.node.frontmatter.excerpt}{' '}
@@ -53,5 +53,9 @@ const ArticleTeaser = styled.article`
 
 	a {
 		color: teal;
+	}
+
+	div {
+		margin-bottom: 2em;
 	}
 `

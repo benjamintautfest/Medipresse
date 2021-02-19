@@ -13,7 +13,7 @@ export default function Header() {
 		{ name: 'Home', path: '/', id: 1 },
 		{ name: 'Krankheiten A-Z', path: '/about', id: 2 },
 		{ name: 'Gesund leben', path: '/contact', id: 3 },
-		{ name: 'Expertensperchstunde', path: '/trombose', id: 4 },
+		{ name: 'Expertensprechstunde', path: '/trombose', id: 4 },
 		{ name: 'Mensch und Tier', path: '/trombose', id: 5 },
 		{ name: 'Videos', path: '/trombose', id: 6 },
 		{ name: 'Ratgeber', path: '/graphql.html', id: 7 },
@@ -124,7 +124,7 @@ const HeaderStyled = styled.header`
 	margin-top: 0;
 	position: relative;
 	border-top: 30px yellowgreen solid;
-	border-bottom: 10px #E0EAF0 solid;
+	border-bottom: 10px #e0eaf0 solid;
 	ƒ h1,
 	a {
 		color: white;
