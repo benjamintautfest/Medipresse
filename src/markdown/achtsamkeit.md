@@ -3,7 +3,7 @@ title: 'Trendthema Achtsamkeitstraining: Was steckt hinter dem Hype?'
 banner: './achtsamkeit.jpg'
 excerpt: 'Manager tun es ebenso wie Schüler und Soldaten der US-Armee – die Rede ist von Achtsamkeits­training. Im stressigen Alltag soll es für mehr Ruhe und Ausgeglichen­heit sorgen. Doch was genau ist darunter zu verstehen und was sind die Effekte? Wir beantworten die wichtigsten Fragen.'
 ---
-[Manager](https://news.sap.com/germany/2018/09/achtsamkeit/) tun es ebenso wie [Schüler](http://www.elisabethenschule.net/achtsamkeit.html) und [Soldaten der US-Armee](https://medschool.ucsd.edu/som/hear/resources/Documents/reslience%20training%20army.pdf) – die Rede ist von Achtsamkeits­training. Im stressigen Alltag soll es für mehr Ruhe und Ausgeglichen­heit sorgen. Doch was genau ist darunter zu verstehen und was sind die Effekte? Wir beantworten die wichtigsten Fragen.
+[Manager](https://news.sap.com/germany/2018/09/achtsamkeit/) tun es ebenso wie [Schüler](http://www.elisabethenschule.net/achtsamkeit.html) und [Soldaten der US-Armee](https://medschool.ucsd.edu/som/hear/resources/Documents/reslience%20training%20army.pdf) – die Rede ist von Achtsamkeitstraining. Im stressigen Alltag soll es für mehr Ruhe und Ausgeglichen­heit sorgen. Doch was genau ist darunter zu verstehen und was sind die Effekte? Wir beantworten die wichtigsten Fragen.
 
 ## Was versteht man unter Achtsamkeitstraining?
 
