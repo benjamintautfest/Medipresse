@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link, graphql, useStaticQuery } from 'gatsby'
+import { Link } from 'gatsby'
 import styled from 'styled-components'
 import logo from '../assets/medipresse_logo.svg'
 import facebook from '../assets/facebook.svg'

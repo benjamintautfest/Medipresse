@@ -12,6 +12,11 @@ export default function GraphqlTestSite() {
 						frontmatter {
 							title
 							excerpt
+							link
+							banner {
+								relativePath
+								
+							}	
 						}
 						html
 					}
@@ -19,19 +24,20 @@ export default function GraphqlTestSite() {
 			}
 		}
 	`)
-
+	
 	return (
 		<Layout>
 			{data.allMarkdownRemark.edges.map((edge) => (
 				<ArticleTeaser key={edge.node.frontmatter.title}>
 					<h2>{edge.node.frontmatter.title}</h2>
 					<div>
-						<img src={edge.node.frontmatter.banner} />
+						<img src={edge.node.frontmatter.banner}  />
 						<p>
-							{edge.node.frontmatter.excerpt}{' '}
-							<Link to="#">mehr</Link>
-						</p>
+							{edge.node.frontmatter.excerpt} &nbsp;
+							<Link to={edge.node.frontmatter.link}>mehr</Link>
+						</p>	
 					</div>
+					
 				</ArticleTeaser>
 			))}
 		</Layout>
@@ -55,7 +61,4 @@ const ArticleTeaser = styled.article`
 		color: teal;
 	}
 
-	div {
-		margin-bottom: 2em;
-	}
 `
