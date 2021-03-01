@@ -15,8 +15,7 @@ export default function GraphqlTestSite() {
 							link
 							banner {
 								relativePath
-								
-							}	
+							}
 						}
 						html
 					}
@@ -24,20 +23,22 @@ export default function GraphqlTestSite() {
 			}
 		}
 	`)
-	
+
 	return (
 		<Layout>
 			{data.allMarkdownRemark.edges.map((edge) => (
 				<ArticleTeaser key={edge.node.frontmatter.title}>
 					<h2>{edge.node.frontmatter.title}</h2>
-					<div>
-						<img src={edge.node.frontmatter.banner}  />
+					<section>
+						
 						<p>
 							{edge.node.frontmatter.excerpt} &nbsp;
 							<Link to={edge.node.frontmatter.link}>mehr</Link>
-						</p>	
-					</div>
-					
+						</p>
+					</section>
+					<article
+						dangerouslySetInnerHTML={{__html: edge.node.html}}
+					></article>
 				</ArticleTeaser>
 			))}
 		</Layout>
@@ -50,7 +51,8 @@ const ArticleTeaser = styled.article`
 		font-size: 1.3em;
 	}
 
-	p {
+	p,
+	ul {
 		line-height: 1.6;
 		margin-top: 0;
 		padding-bottom: 1em;
@@ -61,4 +63,20 @@ const ArticleTeaser = styled.article`
 		color: teal;
 	}
 
+	img {
+		float: left;
+		margin-right: 1.5em;
+	}
+
+	ul, ol {
+		padding: 1em;
+	}
+
+	@media (max-width: 800px) {
+		img {
+			clear: both;
+			width: 100%;
+			margin-bottom: 1em;
+		}
+	}
 `
