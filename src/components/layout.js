@@ -11,10 +11,10 @@ const Layout = ({ children }) => {
 		<LayoutStyled>
 			<Header />
 			<Teaser />
-			<div>
+			<Container>
 				<main>{children}</main>
 				<SideBar />
-			</div>
+			</Container>
 			<Footer />
 		</LayoutStyled>
 	)
@@ -39,9 +39,7 @@ const LayoutStyled = styled.div`
 		padding: 2em;
 		width: 90%;
 	}
-	div {
-		display: flex;
-	}
+
 	SideBar {
 		width: 10%;
 	}
@@ -51,4 +49,8 @@ const LayoutStyled = styled.div`
 			width: 100%;
 		}
 	}
+`
+
+const Container = styled.div `
+	display: flex;
 `

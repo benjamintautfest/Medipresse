@@ -137,7 +137,7 @@ const HeaderStyled = styled.header`
 	a {
 		color: grey;
 		padding: 0.5em 1em 1em 0;
-		transition: all 0.4s;
+		transition: all 0.4s ease;
 		text-decoration: none;
 	}
 
@@ -151,7 +151,7 @@ const HeaderStyled = styled.header`
 		top: 0.4em;
 		width: 50%;
 		max-width: 200px;
-		transition: all 0.5s;
+		transition: all 0.5s ease-in;
 		margin-left: 0.5em;
 	}
 
