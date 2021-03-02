@@ -64,8 +64,8 @@ const ArticleTeaser = styled.article`
 	}
 
 	img {
-		float: left;
-		margin-right: 1.5em;
+		margin: 1em;
+		
 	}
 
 	ul, ol {

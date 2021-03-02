@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'gatsby'
+import Bones from '../assets/bone_teaser.jpg'
+
 
 
 const Teaser = () => {
@@ -8,7 +10,7 @@ const Teaser = () => {
 		<TeaserBox>
 			<div>
 				<img
-					src="https://rosehipvital.com.sg/assets/images/joints-group.jpg"
+					src={Bones}
 					alt=""
 				/>
 			</div>

@@ -6,8 +6,9 @@ banner: achtsamkeit.jpg
 ---
 [Manager](https://news.sap.com/germany/2018/09/achtsamkeit/) tun es ebenso wie [Schüler](http://www.elisabethenschule.net/achtsamkeit.html) und [Soldaten der US-Armee](https://medschool.ucsd.edu/som/hear/resources/Documents/reslience%20training%20army.pdf) – die Rede ist von Achtsamkeitstraining. Im stressigen Alltag soll es für mehr Ruhe und Ausgeglichen­heit sorgen. Doch was genau ist darunter zu verstehen und was sind die Effekte? Wir beantworten die wichtigsten Fragen.
 
+![meditierende Frau](./achtsamkeit.jpg)
+
 ## Was versteht man unter Achtsamkeitstraining?
-![image](https://www.medipresse.de/uploads/images/Achtsamkeitstraining.jpg)
 Der Alltag steckt voller Herausforderungen und Belastungen wie etwa Leistungsdruck, Konflikte oder auch Schlafstörungen und Schmerzen. Ziel des Achtsamkeitstrainings ist es, eine nicht wertende und akzeptierende Haltung gegenüber jeder Art von Stress zu entwickeln. Dafür stehen viele verschiedene Techniken bereit. Neben Yoga, autogenem Training und Meditation gewinnt vor allem das sogenannte MBSR zusehends an Beliebtheit. Die Abkürzung steht für Mindfulness-Based Stress Reduction, was so viel wie Stressbewältigung durch Achtsamkeit bedeutet und ein spezielles Trainingsprogramm bezeichnet, das in den 1970er Jahren vom Molekularbiologen Jon Kabat-Zinn entwickelt wurde. In dem standardisierten achtwöchigen Programm lernen die Teilnehmer unterschiedliche Achtsamkeitsübungen kennen. Dazu gehören:
 
 - Übungen zur achtsamen Körperwahrnehmung mithilfe des Bodyscans

@@ -3,14 +3,15 @@ import styled from 'styled-components/macro'
 import Article from './article'
 import { Link } from 'gatsby'
 import SpecialLinks from './specialLinks'
+import Busch from '../assets/busch.jpg'
 
 const SideBar = () => {
 	return (
 		<SidebarStyled>
 			<SpecialLinks />
 			<img
-				src="https://www.medipresse.de/uploads/images/busch_sidebar_teaser.jpg"
-				alt=""
+				src={Busch}
+				alt="busch"
 			/>
 			<img
 				src="https://www.medipresse.de/uploads/images/experten_btn.jpg"

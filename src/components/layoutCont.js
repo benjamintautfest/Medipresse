@@ -4,7 +4,6 @@ import Footer from './footer'
 import style from '../styles/index.css'
 import styled from 'styled-components'
 import SideBar from './sidebar'
-import Teaser from './teaser'
 
 const Layout = ({ children }) => {
 	return (
