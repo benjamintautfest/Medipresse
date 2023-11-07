@@ -7,7 +7,7 @@ const Teaser = () => {
 		<TeaserBox>
 			<div>
 				<img
-					src="https://rosehipvital.com.sg/assets/images/joints-group.jpg"
+					src="https://storage.googleapis.com/treatspace-prod-media/pracimg/u-2202/shutterstock_1857461167.jpeg"
 					alt=""
 				/>
 			</div>
